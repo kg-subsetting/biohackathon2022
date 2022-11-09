@@ -28,7 +28,7 @@ do
         --dumpFormat Turtle \
         --dumpMode WholeEntity \
         --schemaFormat ShExC \
-        /data/latest-all.json.gz;`
+        /data/wikidata-20220103-all.json.gz;`
     echo "Subsetting is being created  for ${shex_files_path}/${shex_file_name}.shex";
     echo "Check ${dockerID} for progres" 
 done
