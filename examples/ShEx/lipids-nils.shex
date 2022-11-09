@@ -1,0 +1,14 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+start = @<LipidType>
+
+<LipidType> {
+    rdfs:label [ @en ] ;
+    wdt:P31 . * ;
+    skos:altLabel [ @en ] * ;
+    wdt:P2063 . +
+}
+
