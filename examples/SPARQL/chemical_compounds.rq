@@ -7,4 +7,3 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 SELECT ?chemical_compounds WHERE {
     ?chemical_compounds wdt:P279* wd:Q11173 .
 }
-
