@@ -66,7 +66,7 @@ start= @:active_site OR
   rdfs:label [ @en @es ] ;  
   wdt:P31  [wd:Q2996394];
   wdt:P527 @:disease *;
-  wdt:P31 @:anatomical_structure *; 
+  wdt:P31 @:anatomical_structure *; ## Is this an error? It is using P31 
   wdt:P279 @:biological_process *
 }
 
