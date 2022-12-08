@@ -96,12 +96,12 @@ start= @:active_site OR
   wdt:P3364 @:chemical_compound * ;
   wdt:P769 @:chemical_compound * ;
   wdt:P2868 @:pharmacologic_action * ;
-  wdt:P769  @:pharmacologic_action * ;  # significant drug interaction (P769)
-  wdt:P279  @:pharmacologic_action * ;  # subclass of (P279)
-  wdt:P361  @:medication * ;            # part of (P361)
-  wdt:P527  @:medication * ;            # has part(s) (P527)
-  wdt:P2868 @:mechanism_of_action *;    # subject has role (P2868)
-  wdt:P3489 @:disease * ;               # pregnancy category (P3489)
+  wdt:P769  @:pharmacologic_action * ;              # significant drug interaction (P769)
+  wdt:P279  @:pharmacologic_action * ;              # subclass of (P279)
+  wdt:P361  @:medication * ;                        # part of (P361)
+  wdt:P527  @:medication * ;                        # has part(s) (P527)
+  wdt:P2868 @:mechanism_of_action *;                # subject has role (P2868)
+  wdt:P3489 @:disease * ;                           # pregnancy category (P3489)
 }
 
 :chromosome EXTRA wdt:P31 {
@@ -114,27 +114,27 @@ start= @:active_site OR
   rdfs:label [ @en @es ] ;  
   wdt:P31   [ wd:Q12136 ] ;
   wdt:P279  @:disease * ;
-  wdt:P780  @:disease * ;                   # symptoms and signs (P780)
-  wdt:P828  @:taxon * ;                     # has cause (P828)
-  wdt:P2293 @:gene * ;                      # genetic association (P2293)
-  wdt:P927  @:anatomical_structure * ;      # anatomical location (P927)
-  wdt:P2176 @:medication * ;                # drug or therapy used for treatment (P2176)
-  wdt:P2176 @:chemical_compound * ;         # drug or therapy used for treatment (P2176)
-  wdt:P2176 @:therapeutic_use * ;           # drug or therapy used for treatment (P2176)
-  wdt:P2175 @:medication * ;                # medical condition treated (P2175)
-  wdt:P2175 @:chemical_compound * ;         # medical condition treated (P2175)
-  wdt:P2175 @:therapeutic_use * ;           # medical condition treated (P2175)
+  wdt:P780  @:disease * ;                           # symptoms and signs (P780)
+  wdt:P828  @:taxon * ;                             # has cause (P828)
+  wdt:P2293 @:gene * ;                              # genetic association (P2293)
+  wdt:P927  @:anatomical_structure * ;              # anatomical location (P927)
+  wdt:P2176 @:medication * ;                        # drug or therapy used for treatment (P2176)
+  wdt:P2176 @:chemical_compound * ;                 # drug or therapy used for treatment (P2176)
+  wdt:P2176 @:therapeutic_use * ;                   # drug or therapy used for treatment (P2176)
+  wdt:P2175 @:medication * ;                        # medical condition treated (P2175)
+  wdt:P2175 @:chemical_compound * ;                 # medical condition treated (P2175)
+  wdt:P2175 @:therapeutic_use * ;                   # medical condition treated (P2175)
 }
 
 :gene EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31   [ wd:Q7187 ] ;
-  wdt:P684  @:gene * ;                      # ortholog (P684)
-  wdt:P2293 @:disease *;                    # genetic association (P2293)
-  wdt:P703  @:taxon * ;                     # found in taxon (P703)
-  wdt:P1057 @:chromosome * ;                # chromosome (P1057)
-  wdt:P682  @:biological_process ;          # biological process (P682)
-  wdt:P688  @:protein * ;                   # encodes (P688)
+  wdt:P684  @:gene * ;                              # ortholog (P684)
+  wdt:P2293 @:disease *;                            # genetic association (P2293)
+  wdt:P703  @:taxon * ;                             # found in taxon (P703)
+  wdt:P1057 @:chromosome * ;                        # chromosome (P1057)
+  wdt:P682  @:biological_process ;                  # biological process (P682)
+  wdt:P688  @:protein * ;                           # encodes (P688)
 }
 
 :mechanism_of_action EXTRA wdt:P31 {
@@ -169,78 +169,78 @@ start= @:active_site OR
 :pharmaceutical_product EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31  [ wd:Q28885102 ] ;
-  wdt:P3781 @:therapeutic_use * ;           # has active ingredient (P3781)
-  wdt:P3781 @:pharmacologic_action * ;      # has active ingredient (P3781)
-  wdt:P3781 @:chemical_compound * ;         # has active ingredient (P3781)
-  wdt:P3781 @:medication * ;                # has active ingredient (P3781)
-  wdt:P3780 @:therapeutic_use * ;           # active ingredient in (P3780)
-  wdt:P3780 @:pharmacologic_action * ;      # active ingredient in (P3780)
-  wdt:P3780 @:chemical_compound * ;         # active ingredient in (P3780)
-  wdt:P3780 @:medication * ;                # active ingredient in (P3780)
-  wdt:P4044 @:disease *;                    # therapeutic area (P4044)
+  wdt:P3781 @:therapeutic_use * ;               # has active ingredient (P3781)
+  wdt:P3781 @:pharmacologic_action * ;          # has active ingredient (P3781)
+  wdt:P3781 @:chemical_compound * ;             # has active ingredient (P3781)
+  wdt:P3781 @:medication * ;                    # has active ingredient (P3781)
+  wdt:P3780 @:therapeutic_use * ;               # active ingredient in (P3780)
+  wdt:P3780 @:pharmacologic_action * ;          # active ingredient in (P3780)
+  wdt:P3780 @:chemical_compound * ;             # active ingredient in (P3780)
+  wdt:P3780 @:medication * ;                    # active ingredient in (P3780)
+  wdt:P4044 @:disease *;                        # therapeutic area (P4044)
 }
 
 :pharmacologic_action EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;
   wdt:P31 [wd:Q50377224 ] ;
-  wdt:P3780 @:pharmaceutical_product * ;    # active ingredient in (P3780)
-  wdt:P3781 @:pharmaceutical_product * ;    # has active ingredient (P3781)
-  wdt:P2175 @:disease * ;                   # medical condition treated (P2175)
-  wdt:P2176 @:disease * ;                   # drug or therapy used for treatment (P2176)
+  wdt:P3780 @:pharmaceutical_product * ;        # active ingredient in (P3780)
+  wdt:P3781 @:pharmaceutical_product * ;        # has active ingredient (P3781)
+  wdt:P2175 @:disease * ;                       # medical condition treated (P2175)
+  wdt:P2176 @:disease * ;                       # drug or therapy used for treatment (P2176)
 }
 
 :protein_domain EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31  [ wd:Q898273 ] ;
-  wdt:P279 @:protein_domain * ;             # subclass of (P279)
-  wdt:P128 @:protein_domain * ;             # regulates (molecular biology) (P128)
-  wdt:P527 @:protein_domain * ;             # has part(s) (P527)
-  wdt:P361 @:protein_domain * ;             # part of (P361)
+  wdt:P279 @:protein_domain * ;                 # subclass of (P279)
+  wdt:P128 @:protein_domain * ;                 # regulates (molecular biology) (P128)
+  wdt:P527 @:protein_domain * ;                 # has part(s) (P527)
+  wdt:P361 @:protein_domain * ;                 # part of (P361)
 }
 
 :protein_family EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31  [ wd:Q417841 ] ;
-  wdt:P527 @:protein * ;                    # has part(s) (P527)
-  wdt:P279 @:protein_family* ;              # subclass of (P279)
-  wdt:P527 @:protein * ;                    # part of (P361)
+  wdt:P527 @:protein * ;                        # has part(s) (P527)
+  wdt:P279 @:protein_family* ;                  # subclass of (P279)
+  wdt:P527 @:protein * ;                        # part of (P361)
 }
 
 :protein EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31  [ wd:Q8054 ] ;
-  wdt:P129 @:protein  * ;                   # physically interacts with (P129)
-  wdt:P681 @:protein * ;                    # cell component (P681)
-  wdt:P129 @:medication * ;                 # physically interacts with (P129)
-  wdt:P680 @:molecular_function * ;         # molecular function (P680)
-  wdt:P681 @:cellular_component * ;         # cell component (P681)
-  wdt:P681 @:anatomical_structure * ;       # cell component (P681)
-  wdt:P682 @:biological_process * ;         # biological process (P682)
-  wdt:P527 @:active_site * ;                # has part(s) (P527)
-  wdt:P361 @:active_site * ;                # part of (P361)
-  wdt:P527 @:protein_domain * ;             # has part(s) (P527)
-  wdt:P361 @:protein_domain * ;             # part of (P361)
-  wdt:P361 @:protein_family * ;             # part of (P361)
-  wdt:P527 @:protein_family * ;             # has part(s) (P527)
+  wdt:P129 @:protein  * ;                       # physically interacts with (P129)
+  wdt:P681 @:protein * ;                        # cell component (P681)
+  wdt:P129 @:medication * ;                     # physically interacts with (P129)
+  wdt:P680 @:molecular_function * ;             # molecular function (P680)
+  wdt:P681 @:cellular_component * ;             # cell component (P681)
+  wdt:P681 @:anatomical_structure * ;           # cell component (P681)
+  wdt:P682 @:biological_process * ;             # biological process (P682)
+  wdt:P527 @:active_site * ;                    # has part(s) (P527)
+  wdt:P361 @:active_site * ;                    # part of (P361)
+  wdt:P527 @:protein_domain * ;                 # has part(s) (P527)
+  wdt:P361 @:protein_domain * ;                 # part of (P361)
+  wdt:P361 @:protein_family * ;                 # part of (P361)
+  wdt:P527 @:protein_family * ;                 # has part(s) (P527)
   wdt:P527 @:active_site * ;
   wdt:P361 @:active_site * ;
   wdt:P361 @:binding_site * ;
   wdt:P527 @:binding_site * ;
-  wdt:P129 @:chemical_compound  * ;         # physically interacts with (P129)
-  wdt:P129 @:medication  * ;                # physically interacts with (P129)
-  wdt:P702 @:gene * ;                       # encoded by (P702)
-  wdt:P703 @:taxon * ;                      # found in taxon (P703)
+  wdt:P129 @:chemical_compound  * ;             # physically interacts with (P129)
+  wdt:P129 @:medication  * ;                    # physically interacts with (P129)
+  wdt:P702 @:gene * ;                           # encoded by (P702)
+  wdt:P703 @:taxon * ;                          # found in taxon (P703)
 }
 
 :sequence_variant EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31   [ wd:Q15304597 ] ;
-  wdt:P3433 @:gene * ;                      # sequence variant (Q15304597)
-  wdt:P3355  @:chemical_compound * ;        # negative therapeutic predictor for (P3355)
-  wdt:P3354 @:chemical_compound * ;         # positive therapeutic predictor for (P3354)
+  wdt:P3433 @:gene * ;                          # sequence variant (Q15304597)
+  wdt:P3355  @:chemical_compound * ;            # negative therapeutic predictor for (P3355)
+  wdt:P3354 @:chemical_compound * ;             # positive therapeutic predictor for (P3354)
   wdt:P3354 @:medication * ; 
   wdt:P3355 @:medication * ;
-  wdt:P1057 @:chromosome * ;                # chromosome (P1057)
+  wdt:P1057 @:chromosome * ;                    # chromosome (P1057)
 }
 
 :supersecondary_structure EXTRA wdt:P31 {
@@ -254,7 +254,7 @@ start= @:active_site OR
 :symptom EXTRA wdt:P31 {
   rdfs:label [ @en @es ] ;  
   wdt:P31 [ wd:Q169872 ];
-  wdt:P2176 @:chemical_compound *;          # drug or therapy used for treatment (P2176)
+  wdt:P2176 @:chemical_compound *;              # drug or therapy used for treatment (P2176)
 }
 
 :taxon EXTRA wdt:P31 {
