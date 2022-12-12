@@ -17,6 +17,7 @@ prefix xsd:      <http://www.w3.org/2001/XMLSchema#>
 
 
 select (count(?x) as ?count_x) ?count_hasPart  where {
+  
  ?x wdt:P31 wd:Q423026  . 
 
  { SELECT (count(?y) as ?count_hasPart) WHERE {
