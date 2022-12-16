@@ -1,3 +1,5 @@
+# Changelog 
+# 2022-12-16 Version 1.0, use only labels in English
 # based on https://raw.githubusercontent.com/SuLab/genewikiworld/master/img/update.png
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -31,28 +33,28 @@ start= @:active_site OR
        @:therapeutic_use 
 
 :active_site EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;
+  rdfs:label [ @en ] ;
   wdt:P31  [ wd:Q423026 ]      ;
   wdt:P361 @:protein_family * ;
   wdt:P527 @:protein_family * ;
 }
 
 :anatomical_structure EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q4936952 ] ;
   wdt:P361 @:anatomical_structure * ; # part of
   wdt:P527 @:anatomical_structure *  # has part
 }
 
 :binding_site EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;
+  rdfs:label [ @en ] ;
   wdt:P31  [ wd:Q616005 ] ;
   wdt:P361 @:protein_family *;
   wdt:P527 @:protein_family *;
 }
 
 :biological_pathway EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;
+  rdfs:label [ @en ] ;
   wdt:P31 [ wd:Q4915012 ] ;
   wdt:P527 @:biological_pathway * ;
   wdt:P361 @:biological_pathway * ;
@@ -67,7 +69,7 @@ start= @:active_site OR
 }
 
 :biological_process EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [wd:Q2996394] ; # OR @:biological_process ;
   wdt:P279 @:biological_process * ;
   wdt:P361 @:biological_process * ;
@@ -82,7 +84,7 @@ start= @:active_site OR
 }
 
 :cellular_component EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [wd:Q5058355];
   wdt:P279 @:cellular_component * ;
   wdt:P361 @:cellular_component * ;
@@ -91,7 +93,7 @@ start= @:active_site OR
   }
 
 :chemical_compound EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q11173 ] ;
   wdt:P3364 @:chemical_compound * ;
   wdt:P769 @:chemical_compound * ;
@@ -105,12 +107,12 @@ start= @:active_site OR
 }
 
 :chromosome EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q37748 ]  ; # OR @:cellular_component ;
 }
 
 :disease EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31   [ wd:Q12136 ] ;
   wdt:P279  @:disease * ;
   wdt:P780  @:disease * ;                           # symptoms and signs (P780)
@@ -126,7 +128,7 @@ start= @:active_site OR
 }
 
 :gene EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31   [ wd:Q7187 ] ;
   wdt:P684  @:gene * ;                              # ortholog (P684)
   wdt:P2293 @:disease *;                            # genetic association (P2293)
@@ -137,12 +139,12 @@ start= @:active_site OR
 }
 
 :mechanism_of_action EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q3271540 ] ;
 }
 
 :medication EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q12140 ] ;
   wdt:P2175 @:disease * ;                           # medical condition treated (P2175)
   wdt:P3780 @:pharmaceutical_product * ;            # active ingredient in (P3780)
@@ -158,7 +160,7 @@ start= @:active_site OR
 }
 
 :molecular_function EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q14860489 ] ;
   wdt:P361 @:molecular_function *;
   wdt:P527 @:molecular_function *;
@@ -166,7 +168,7 @@ start= @:active_site OR
 }
 
 :pharmaceutical_product EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q28885102 ] ;
   wdt:P3781 @:therapeutic_use * ;               # has active ingredient (P3781)
   wdt:P3781 @:pharmacologic_action * ;          # has active ingredient (P3781)
@@ -180,7 +182,7 @@ start= @:active_site OR
 }
 
 :pharmacologic_action EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;
+  rdfs:label [ @en ] ;
   wdt:P31 [wd:Q50377224 ] ;
   wdt:P3780 @:pharmaceutical_product * ;        # active ingredient in (P3780)
   wdt:P3781 @:pharmaceutical_product * ;        # has active ingredient (P3781)
@@ -189,7 +191,7 @@ start= @:active_site OR
 }
 
 :protein_domain EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q898273 ] ;
   wdt:P279 @:protein_domain * ;                 # subclass of (P279)
   wdt:P128 @:protein_domain * ;                 # regulates (molecular biology) (P128)
@@ -198,7 +200,7 @@ start= @:active_site OR
 }
 
 :protein_family EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q417841 ] ;
   wdt:P527 @:protein * ;                        # has part(s) (P527)
   wdt:P279 @:protein_family* ;                  # subclass of (P279)
@@ -206,7 +208,7 @@ start= @:active_site OR
 }
 
 :protein EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31  [ wd:Q8054 ] ;
   wdt:P129 @:protein  * ;                       # physically interacts with (P129)
   wdt:P681 @:protein * ;                        # cell component (P681)
@@ -232,7 +234,7 @@ start= @:active_site OR
 }
 
 :sequence_variant EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31   [ wd:Q15304597 ] ;
   wdt:P3433 @:gene * ;                          # sequence variant (Q15304597)
   wdt:P3355  @:chemical_compound * ;            # negative therapeutic predictor for (P3355)
@@ -243,7 +245,7 @@ start= @:active_site OR
 }
 
 :supersecondary_structure EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q7644128 ] ;
   wdt:P361 @:protein *;
   wdt:P361 @:protein_family *;
@@ -251,17 +253,17 @@ start= @:active_site OR
 }
 
 :symptom EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q169872 ];
   wdt:P2176 @:chemical_compound *;              # drug or therapy used for treatment (P2176)
 }
 
 :taxon EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31 [ wd:Q16521 ] ; 
 }
 
 :therapeutic_use EXTRA wdt:P31 {
-  rdfs:label [ @en @es ] ;  
+  rdfs:label [ @en ] ;  
   wdt:P31   [ wd:Q50379781 ] ;
 }
