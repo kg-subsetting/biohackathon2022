@@ -181,7 +181,6 @@ start = @<taxon_by_wd_ontology> OR @<taxon_by_identifier>
 {wdt:P6341 . +;} OR # IFPNI species ID
 {wdt:P6347 . +;} OR # The White-files species ID
 {wdt:P6349 . +;} OR # Lace Bugs Database ID
-{wdt:P6366 . +;} OR # Microsoft Academic ID
 {wdt:P6376 . +;} OR # Psyl'list species ID
 {wdt:P6408 . +;} OR # COOL species ID
 {wdt:P6433 . +;} OR # Global Species ID
