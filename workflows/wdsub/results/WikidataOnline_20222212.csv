@@ -1,0 +1,113 @@
+name,value,prop,propType,value
+active_site,132,,,
+,,has part(s)(P527),protein_family(wd:Q417841),0
+,,part of(P361),protein_family(wd:Q417841),262
+anatomical_structure,746,,,
+,,has part(s)(P527),anatomical_structure(wd:Q4936952),76
+,,part of(P361),anatomical_structure(wd:Q4936952),129
+binding_site,76,,,
+,,has part(s)(P527),protein_family(wd:Q417841),0
+,,part of(P361),protein_family(wd:Q417841),214
+biological_pathway,3554,,,
+,,has part(s)(P527),biological_pathway(wd:Q4915012),2634
+,,has part(s)(P527),medication(wd:Q12140),1029
+,,part of(P361),gene(wd:Q7187),0
+,,found in taxon(P703),taxon(wd:Q16521),3529
+,,medical condition(P1050),disease(wd:Q12136),55
+,,part of(P361),chemical_compound(wd:Q11173),0
+,,has part(s)(P527),gene(wd:Q7187),37286
+,,has part(s)(P527),chemical_compound(wd:Q11173),4750
+,,part of(P361),biological_pathway(wd:Q4915012),2645
+,,part of(P361),medication(wd:Q12140),0
+biological_process,42449,,,
+,,regulates (molecular biology)(P128),biological_process(wd:Q2996394),8649
+,,has part(s)(P527),biological_process(wd:Q2996394),273
+,,part of(P361),biological_process(wd:Q2996394),5062
+,,part of(P361),chemical_compound(wd:Q11173),0
+,,has part(s)(P527),medication(wd:Q12140),930
+,,subclass of(P279),biological_process(wd:Q2996394),51700
+,,has part(s)(P527),chemical_compound(wd:Q11173),14138
+,,regulates (molecular biology)(P128),molecular_function(wd:Q14860489),812
+,,part of(P361),medication(wd:Q12140),0
+cellular_component,4211,,,
+,,has part(s)(P527),cellular_component(wd:Q5058355),199
+,,cell component(P681),cellular_component(wd:Q5058355),1
+,,part of(P361),cellular_component(wd:Q5058355),1957
+,,subclass of(P279),cellular_component(wd:Q5058355),4894
+chemical_compound,1249719,,,
+,,subject has role(P2868),mechanism_of_action(wd:Q3271540),0
+,,significant drug interaction(P769),chemical_compound(wd:Q11173),1379
+,,subject has role(P2868),pharmacologic_action(wd:Q50377224),0
+,,subclass of(P279),pharmacologic_action(wd:Q50377224),0
+,,has part(s)(P527),medication(wd:Q12140),53
+,,stereoisomer of(P3364),chemical_compound(wd:Q11173),1963
+,,pregnancy category(P3489),disease(wd:Q12136),0
+,,significant drug interaction(P769),pharmacologic_action(wd:Q50377224),0
+,,part of(P361),medication(wd:Q12140),17
+chromosome,9224,,,
+disease,5698,,,
+,,anatomical location(P927),anatomical_structure(wd:Q4936952),56
+,,genetic association(P2293),gene(wd:Q7187),2148
+,,drug or therapy used for treatment(P2176),medication(wd:Q12140),1081
+,,drug or therapy used for treatment(P2176),therapeutic_use(wd:Q50379781),0
+,,subclass of(P279),disease(wd:Q12136),1661
+,,symptoms and signs(P780),disease(wd:Q12136),59
+,,has cause(P828),taxon(wd:Q16521),99
+,,medical condition treated(P2175),chemical_compound(wd:Q11173),0
+,,medical condition treated(P2175),medication(wd:Q12140),0
+,,medical condition treated(P2175),therapeutic_use(wd:Q50379781),0
+,,drug or therapy used for treatment(P2176),chemical_compound(wd:Q11173),1060
+gene,Error Server Error,,
+mechanism_of_action,0,,,
+medication,3450,,,
+,,subject has role(P2868),mechanism_of_action(wd:Q3271540),0
+,,significant drug interaction(P769),chemical_compound(wd:Q11173),1387
+,,subclass of(P279),therapeutic_use(wd:Q50379781),0
+,,significant drug interaction(P769),therapeutic_use(wd:Q50379781),0
+,,medical condition treated(P2175),symptom(wd:Q169872),97
+,,medical condition treated(P2175),disease(wd:Q12136),1053
+,,active ingredient in(P3780),pharmaceutical_product(wd:Q28885102),2072
+,,subject has role(P2868),pharmacologic_action(wd:Q50377224),0
+,,subclass of(P279),pharmacologic_action(wd:Q50377224),0
+,,subject has role(P2868),therapeutic_use(wd:Q50379781),0
+,,significant drug interaction(P769),pharmacologic_action(wd:Q50377224),0
+molecular_function,11246,,,
+,,subclass of(P279),molecular_function(wd:Q14860489),13788
+,,has part(s)(P527),molecular_function(wd:Q14860489),222
+,,part of(P361),molecular_function(wd:Q14860489),11
+pharmaceutical_product,2784,,,
+,,active ingredient in(P3780),chemical_compound(wd:Q11173),0
+,,has active ingredient(P3781),medication(wd:Q12140),2123
+,,therapeutic area(P4044),disease(wd:Q12136),231
+,,has active ingredient(P3781),pharmacologic_action(wd:Q50377224),0
+,,active ingredient in(P3780),therapeutic_use(wd:Q50379781),0
+,,active ingredient in(P3780),medication(wd:Q12140),0
+,,has active ingredient(P3781),chemical_compound(wd:Q11173),2016
+,,has active ingredient(P3781),therapeutic_use(wd:Q50379781),0
+,,active ingredient in(P3780),pharmacologic_action(wd:Q50377224),0
+pharmacologic_action,0,,,
+protein_domain,11736,,,
+,,part of(P361),protein_domain(wd:Q898273),297
+,,has part(s)(P527),protein_domain(wd:Q898273),294
+,,regulates (molecular biology)(P128),protein_domain(wd:Q898273),0
+,,subclass of(P279),protein_domain(wd:Q898273),2337
+protein_family,24266,,,
+,,part of(P361),protein(wd:Q8054),0
+,,subclass of(P279),protein_family(wd:Q417841),5939
+,,has part(s)(P527),protein(wd:Q8054),10
+protein,Error Server Error,,
+sequence_variant,686,,,
+,,negative therapeutic predictor for(P3355),chemical_compound(wd:Q11173),159
+,,positive therapeutic predictor for(P3354),chemical_compound(wd:Q11173),153
+,,positive therapeutic predictor for(P3354),medication(wd:Q12140),127
+,,negative therapeutic predictor for(P3355),medication(wd:Q12140),156
+,,biological variant of(P3433),gene(wd:Q7187),676
+,,chromosome(P1057),chromosome(wd:Q37748),414
+supersecondary_structure,696,,,
+,,part of(P361),protein_domain(wd:Q898273),401
+,,part of(P361),protein_family(wd:Q417841),1338
+,,part of(P361),protein(wd:Q8054),2
+symptom,343,,,
+,,drug or therapy used for treatment(P2176),chemical_compound(wd:Q11173),94
+taxon,3491430,,,
+therapeutic_use,0,,,
