@@ -14,4 +14,4 @@ start = @<taxon_by_wd_ontology> OR @<taxon_by_identifier>
 {wdt:P685 . +;} OR # NCBI taxonomy ID
 {wdt:P846 . +;} OR # GBIF taxon ID
 {wdt:P3151 . +;} OR # iNaturalist taxon ID
-{wdt:P3444 . +;} OR # eBird taxon ID
+{wdt:P3444 . +;} # eBird taxon ID
